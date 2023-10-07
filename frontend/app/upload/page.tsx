@@ -8,7 +8,7 @@ const Test = () => {
   const [loading, setLoading] = useState<boolean>(false);
 
   return (
-    <main className="flex h-screen flex-col items-center justify-between pt-24 bg-mriCyan">
+    <main className="flex h-screen flex-col items-center justify-between pt-24">
       <div className="flex w-screen h-full">
         <div id="leftFlex" className="flex-1 flex h-full w-full">
           {imageInfo ? (

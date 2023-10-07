@@ -9,8 +9,12 @@ const Navbar = () => {
       title: "Home",
     },
     {
-      path: "/test",
-      title: "Test",
+      path: "/upload",
+      title: "Upload",
+    },
+    {
+      path: "/about",
+      title: "About",
     },
   ];
 
@@ -18,7 +22,7 @@ const Navbar = () => {
   console.log(currentPath);
 
   return (
-    <div className="absolute inset-x-1 mx-auto w-8/12 h-fit mt-6 py-2 rounded-full flex flex-row justify-evenly border-solid bg-mriSlate">
+    <div className="absolute inset-x-1 mx-auto w-8/12 h-fit mt-14 py-2 rounded-full flex flex-row justify-evenly border-solid bg-mriSlate">
       {routes.map((route, index) => (
         <Link
           className={`${
