@@ -13,9 +13,9 @@ const Navbar = () => {
   ];
 
   return (
-    <div className=" mx-auto w-8/12 h-fit mt-6 rounded-full flex flex-row justify-evenly border-solid border border-red-700">
+    <div className=" mx-auto w-8/12 h-fit mt-6 py-2 rounded-full flex flex-row justify-evenly border-solid bg-mriSlate">
       {routes.map((route, index) => (
-        <Link className="text-xl font-bold" href={route.path} key={index}>
+        <Link className="hover:bg-mriBlue rounded-full px-16 transition ease-in text-lg" href={route.path} key={index}>
           {route.title}
         </Link>
       ))}
