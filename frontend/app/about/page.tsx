@@ -4,7 +4,7 @@ import Brandon from "../../assets/brandon.jpeg";
 
 const test = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between pt-24 bg-gradient-to-tr from-mriSlate to-mriCyan">
+    <main className="flex min-h-screen flex-col items-center justify-between pt-24">
       <div id="textWrapper" className="w-1/2 h-full flex flex-col mt-10">
         <div className="text-4xl p-2 text-center">The Model</div>
         <div className="text-lg p-2 pb-8">
