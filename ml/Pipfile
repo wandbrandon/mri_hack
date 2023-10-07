@@ -4,16 +4,16 @@ verify_ssl = true
 name = "pypi"
 
 [[source]]
-url = "https://download.pytorch.org/whl/"
+url = "https://download.pytorch.org/whl/nightly/cpu"
 verify_ssl = true
-name = "downloadpytorch"
+name = "downloadpytorch-948"
 
 [packages]
 keras-core = "*"
 ipykernel = "*"
-torch = "*"
 matplotlib = "*"
 tensorflow = "*"
+torch = {version = "*", index = "downloadpytorch-948"}
 
 [dev-packages]
 
