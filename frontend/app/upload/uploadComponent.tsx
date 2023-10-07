@@ -2,23 +2,24 @@
 import React, { useState } from "react";
 import { FileInput, Label } from "flowbite-react";
 
-const UploadBox = (setImageInfo: any) => {
+const UploadBox = ({ setLoading, setImageInfo }: { setLoading: (loading: boolean) => void; setImageInfo: (info: any) => void }) => {
   const [image, setImage] = useState<any | null>(null);
-
   const onImageChange = (event: any) => {
     if (event.target.files && event.target.files[0]) {
       setImage(URL.createObjectURL(event.target.files[0]));
 
       // POST image to backend and pass response to setImageInfo
         const formData = new FormData();
-        formData.append("file", event.target.files[0]);
-        fetch("http://localhost:5000/api/v1/upload", {
+        formData.append("sentImg", event.target.files[0]);
+        setLoading(true);
+        fetch("http://34.23.12.91:5000/predict", {
             method: "POST",
             body: formData,
         })
             .then((response) => response.json())
             .then((result) => {
                 setImageInfo(result);
+                setLoading(false);
             })
             .catch((error) => {
                 console.error("Error:", error);
