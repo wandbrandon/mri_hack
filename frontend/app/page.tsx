@@ -3,7 +3,7 @@ import Mri from "../assets/mri.png"
 
 export default function Home() {
   return (
-    <main className="flex h-screen flex-col items-center justify-between pt-24 bg-mriCyan">
+    <main className="flex h-screen flex-col items-center justify-between pt-24 bg-gradient-to-tr from-mriSlate to-mriCyan">
       <div className="flex w-screen h-full">
         <div id="leftFlex" className="flex-1 flex justify-center h-full">
           <div className="w-auto my-auto ml-36">
