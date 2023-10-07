@@ -14,6 +14,8 @@ ipykernel = "*"
 matplotlib = "*"
 tensorflow = "*"
 torch = {version = "*", index = "downloadpytorch-948"}
+numpy = "*"
+flask = "*"
 
 [dev-packages]
 
