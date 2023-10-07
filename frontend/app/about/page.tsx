@@ -2,7 +2,7 @@ import Austin from "../../assets/austin.png";
 import Shawn from "../../assets/shawn.jpg";
 import Brandon from "../../assets/brandon.jpeg";
 
-const test = () => {
+const About = () => {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between pt-24">
       <div id="textWrapper" className="w-1/2 h-full flex flex-col mt-10">
@@ -79,4 +79,4 @@ const test = () => {
   );
 };
 
-export default test;
+export default About;
