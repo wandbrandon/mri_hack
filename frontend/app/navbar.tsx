@@ -12,6 +12,10 @@ const Navbar = () => {
       path: "/test",
       title: "Test",
     },
+    {
+      path: "/about",
+      title: "About",
+    },
   ];
 
   const currentPath = usePathname();
