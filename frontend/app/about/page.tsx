@@ -5,6 +5,7 @@ import Brandon from "../../assets/brandon.jpeg";
 import Nathan from "../../assets/nathan.png";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import LinkedIn from "../../assets/linkedin-in.svg";
 
 const About = () => {
 
@@ -28,37 +29,53 @@ const About = () => {
        <motion.div variants={item} className="grid grid-cols-2 gap-0 flex-1 mt-56 px-6">
         
         <motion.div variants={item} className="flex flex-col items-center">
-          <Image
-            src={Brandon}
-            alt="Image 3"
-            className="w-48 h-48 border-stone-200 border-x-4 border-y-4 object-cover"
-          />
-          <p className="mt-2 text-center">Brandon Wand</p>
+          <a href="https://www.linkedin.com/in/wandbrandon/" target="_blank">
+            <Image
+              src={Brandon}
+              alt="Image 3"
+              className="w-48 h-48 border-stone-200 border-x-4 border-y-4 object-cover"
+            />
+          </a>
+          <a href="https://www.linkedin.com/in/wandbrandon/" target="_blank" className="w-9/12 mt-2 text-center">
+            Brandon Wand
+          </a>
         </motion.div>
 
         <motion.div variants={item} className="flex flex-col items-center">
-          <Image
-            src={Nathan}
-            alt="Image 4"
-            className="w-48 h-48 border-stone-200 border-x-4 border-y-4 object-cover"
-          />
-          <p className="mt-2 text-center">Nathan Wand</p>
+          <a href="https://nathanwand.com/" target="_blank">
+            <Image
+              src={Nathan}
+              alt="Image 4"
+              className="w-48 h-48 border-stone-200 border-x-4 border-y-4 object-cover"
+            />
+          </a>
+          <a href="https://nathanwand.com/" target="_blank" className="w-9/12 mt-2 text-center">
+            Nathan Wand
+          </a>
         </motion.div>
         <motion.div variants={item} className="flex flex-col items-center">
-          <Image
-            src={Shawn}
-            alt="Image 2"
-            className="w-48 h-48 border-stone-200 border-x-4 border-y-4 object-cover"
-          />
-          <p className="mt-2 text-center">Shuqing (Shawn) Chen</p>
+          <a href="https://www.linkedin.com/in/shawn-shuqing-chen/" target="_blank">
+            <Image
+              src={Shawn}
+              alt="Image 3"
+              className="w-48 h-48 border-stone-200 border-x-4 border-y-4 object-cover"
+            />
+          </a>
+          <a href="https://www.linkedin.com/in/shawn-shuqing-chen/" target="_blank" className="w-10/12 mt-2 text-center">
+            Shuqing (Shawn) Chen
+          </a>
         </motion.div>
         <motion.div variants={item} className="flex flex-col items-center">
-          <Image
-            src={Austin}
-            alt="Image 1"
-            className="w-48 h-48 border-stone-200 border-x-4 border-y-4 object-cover"
-          />
-          <p className="mt-2 text-center">Austin Robertson</p>
+          <a href="https://www.linkedin.com/in/austin-robertson-784b18207/" target="_blank">
+            <Image
+              src={Austin}
+              alt="Image 3"
+              className="w-48 h-48 border-stone-200 border-x-4 border-y-4 object-cover"
+            />
+          </a>
+          <a href="https://www.linkedin.com/in/austin-robertson-784b18207/" target="_blank" className="w-9/12 mt-2 text-center">
+            Austin Robertson
+          </a>
         </motion.div>
       </motion.div>
       

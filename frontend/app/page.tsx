@@ -21,7 +21,7 @@ export default function Home() {
   }
 
   return (
-    <main className="transition-all flex h-screen flex-col items-center justify-between pt-24">
+    <main className="transition-all flex h-screen flex-row items-center justify-between pt-24">
       <div className="flex w-screen h-full">
         <div id="leftFlex" className="flex-1 flex justify-center h-full">
           <motion.div variants={container} initial="hidden" animate="show" className="w-auto my-auto ml-36">
@@ -34,8 +34,8 @@ export default function Home() {
               Medscan AI is a hackathon submission that focuses on the potential
               for AI models used as diagnostic tools to support doctors and
               other healthcare professionals. In this example, we use a brain
-              MRI dataset to predict tumor types with a certian confidence. Feel
-              free to test it out yourself!
+              MRI dataset to predict tumor types with a certain confidence.
+              
             </motion.p>
           </motion.div>
         </div>

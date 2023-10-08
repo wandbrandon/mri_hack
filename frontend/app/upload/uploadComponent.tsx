@@ -36,7 +36,7 @@ const UploadBox = ({
   return (
     <div className="flex flex-col align-middle w-full">
       <div className=" w-1/2 aspect-square flex mx-auto mt-auto mb-3 border-dashed border border-b-cyan-50">
-        {image ? <img src={image} alt="image preview" /> : null}
+        {image ? <img className="w-full object-cover" src={image} alt="image preview" /> : null}
       </div>
           <div className="mb-auto mt-2 w-1/2 mx-auto">
         <div className="pl-px">
