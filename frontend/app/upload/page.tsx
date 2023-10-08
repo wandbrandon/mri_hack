@@ -10,11 +10,16 @@ const Test = () => {
   return (
     <main className="flex h-screen flex-col items-center justify-between pt-24">
       <div className="flex w-screen h-full">
-        <div id="leftFlex" className="flex-1 flex h-full w-full">
+        <div id="leftFlex" className="flex-1 flex h-full w-full pt-32 flex-col">
           {imageInfo ? (
             <div className="m-auto">
-              <h1>{imageInfo.tumorType}</h1>
-              <h1>{imageInfo.probability}</h1>
+              <div className="text-5xl mx-auto text-bold justify-center">
+                TUMOR TYPE
+              </div>
+              <div className="text-xl mx-auto justify-center text-center pt-8">
+                Our AI model predicts with _% confidence that this MRI image
+                shows a _TUMOR_TYPE_ tumor.
+              </div>
             </div>
           ) : null}
           <MoonLoader
