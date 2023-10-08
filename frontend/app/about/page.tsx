@@ -1,5 +1,5 @@
 "use client";
-import Austin from "../../assets/austin.jpg";
+import Austin from "../../assets/austin.jpeg";
 import Shawn from "../../assets/shawn.jpg";
 import Brandon from "../../assets/brandon.jpeg";
 import Nathan from "../../assets/nathan.png";
