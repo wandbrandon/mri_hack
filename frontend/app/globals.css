@@ -9,13 +9,13 @@
 }
 
 :root {
-  --gradient: linear-gradient(45deg, #424141, #086cb5, #00b9b4);
+  --gradient: linear-gradient(30deg, #0816b5, #086cb5, #08b588);
 }
 
 .background_gradient {
   background-size: 200%;
   background-image: var(--gradient);
-  animation: g_anime 8s ease infinite alternate;
+  animation: g_anime 20s ease infinite alternate;
 }
 
 @keyframes g_anime {

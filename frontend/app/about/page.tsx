@@ -1,13 +1,87 @@
-import Austin from "../../assets/austin.png";
+"use client";
+import Austin from "../../assets/austin.jpeg";
 import Shawn from "../../assets/shawn.jpg";
 import Brandon from "../../assets/brandon.jpeg";
+import Nathan from "../../assets/nathan.png";
+import { motion } from "framer-motion";
+import Image from "next/image";
+import LinkedIn from "../../assets/linkedin-in.svg";
 
 const About = () => {
+
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.3
+      }
+    }
+  }
+  
+  const item = {
+    hidden: { opacity: 0}, 
+    show: { opacity: 1}
+  }
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between pt-24">
-      <div id="textWrapper" className="w-1/2 h-full flex flex-col mt-10">
-        <div className="text-4xl p-2 text-center">The Model</div>
-        <div className="text-lg p-2 pb-8">
+    <motion.main variants={container} initial="hidden" animate="show" className="flex min-h-screen flex-row px-10">
+       <motion.div variants={item} className="grid grid-cols-2 gap-0 flex-1 mt-56 px-6">
+        
+        <motion.div variants={item} className="flex flex-col items-center">
+          <a href="https://www.linkedin.com/in/wandbrandon/" target="_blank">
+            <Image
+              src={Brandon}
+              alt="Image 3"
+              className="w-48 h-48 border-stone-200 border-x-4 border-y-4 object-cover"
+            />
+          </a>
+          <a href="https://www.linkedin.com/in/wandbrandon/" target="_blank" className="w-9/12 mt-2 text-center">
+            Brandon Wand
+          </a>
+        </motion.div>
+
+        <motion.div variants={item} className="flex flex-col items-center">
+          <a href="https://nathanwand.com/" target="_blank">
+            <Image
+              src={Nathan}
+              alt="Image 4"
+              className="w-48 h-48 border-stone-200 border-x-4 border-y-4 object-cover"
+            />
+          </a>
+          <a href="https://nathanwand.com/" target="_blank" className="w-9/12 mt-2 text-center">
+            Nathan Wand
+          </a>
+        </motion.div>
+        <motion.div variants={item} className="flex flex-col items-center">
+          <a href="https://www.linkedin.com/in/shawn-shuqing-chen/" target="_blank">
+            <Image
+              src={Shawn}
+              alt="Image 3"
+              className="w-48 h-48 border-stone-200 border-x-4 border-y-4 object-cover"
+            />
+          </a>
+          <a href="https://www.linkedin.com/in/shawn-shuqing-chen/" target="_blank" className="w-10/12 mt-2 text-center">
+            Shuqing (Shawn) Chen
+          </a>
+        </motion.div>
+        <motion.div variants={item} className="flex flex-col items-center">
+          <a href="https://www.linkedin.com/in/austin-robertson-784b18207/" target="_blank">
+            <Image
+              src={Austin}
+              alt="Image 3"
+              className="w-48 h-48 border-stone-200 border-x-4 border-y-4 object-cover"
+            />
+          </a>
+          <a href="https://www.linkedin.com/in/austin-robertson-784b18207/" target="_blank" className="w-9/12 mt-2 text-center">
+            Austin Robertson
+          </a>
+        </motion.div>
+      </motion.div>
+      
+      <motion.div variants={item} id="textWrapper" className=" flex-1 w-1/2 h-full flex flex-col mt-72 px-6">
+        <motion.div variants={item} className="text-6xl p-2 font-bold">The Model</motion.div>
+        <motion.div variants={item} className="text-lg p-2 pb-8 text-justify">
           This neural network model is based on EfficientNetB3, comprising
           11,184,179 parameters (approximately 42.66 MB). It's designed for
           image classification with 256x256x3 input images. The model includes a
@@ -28,54 +102,9 @@ const About = () => {
             {" "}
             <u> Effecient Net V3</u>.
           </a>
-        </div>
-      </div>
-
-      <div className="flex justify-center items-center space-x-32">
-        <div className="flex flex-col items-center">
-          <img
-            src={Austin.src}
-            alt="Image 1"
-            className="w-48 h-64 border-stone-200 border-x-4 border-y-4"
-          />
-          <p className="mt-2 text-center">Austin Robertson</p>
-        </div>
-
-        <div className="flex flex-col items-center">
-          <img
-            src={Shawn.src}
-            alt="Image 2"
-            className="w-48 h-64  border-stone-200 border-x-4 border-y-4"
-          />
-          <p className="mt-2 text-center">Shuqing (Shawn) Chen</p>
-        </div>
-
-        <div className="flex flex-col items-center">
-          <img
-            src={Brandon.src}
-            alt="Image 3"
-            className="w-48 h-64  border-stone-200 border-x-4 border-y-4"
-          />
-          <p className="mt-2 text-center">Brandon Wand</p>
-        </div>
-
-        <div className="flex flex-col items-center">
-          <img
-            src={Austin.src}
-            alt="Image 4"
-            className="w-48 h-64  border-stone-200 border-x-4 border-y-4"
-          />
-          <p className="mt-2 text-center">Nathan Wand</p>
-        </div>
-      </div>
-
-      <div className="flex justify-center items-center space-x-32">
-        <p className="mt-2 text-center w-48 h-64">Testing</p>
-        <p className="mt-2 text-center w-48 h-64">Testing</p>
-        <p className="mt-2 text-center w-48 h-64">Testing</p>
-        <p className="mt-2 text-center w-48 h-64">Testing</p>
-      </div>
-    </main>
+        </motion.div>
+      </motion.div>
+    </motion.main>
   );
 };
 
