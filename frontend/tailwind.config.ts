@@ -19,6 +19,7 @@ const config: Config = {
         mriBlue: "#086cb5",
         mriCyan: "#00b9b4",
         mriSlate: "#424141",
+        mriDarkBlue: "#05406c",
       },
     },
   },

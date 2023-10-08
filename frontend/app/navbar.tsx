@@ -22,12 +22,12 @@ const Navbar = () => {
   console.log(currentPath);
 
   return (
-    <div className="absolute inset-x-1 mx-auto w-8/12 h-fit mt-14 py-2 rounded-full flex flex-row justify-evenly border-solid bg-mriSlate">
+    <div className="absolute inset-x-1 mx-auto w-6/12 h-fit mt-14 p-2 rounded-full flex flex-row justify-evenly border-solid bg-black">
       {routes.map((route, index) => (
         <Link
           className={`${
-            currentPath === route.path ? "bg-mriBlue" : "hover:bg-mriBlue"
-          } rounded-full px-16 transition ease-in text-lg`}
+            currentPath === route.path ? "bg-mriBlue" : "hover:bg-mriCyan"
+          } rounded-full px-16 py-1 transition ease-in text-lg`}
           href={route.path}
           key={index}
         >
