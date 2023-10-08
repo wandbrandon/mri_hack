@@ -30,8 +30,8 @@ const About = () => {
         
         <motion.div variants={item} className="flex flex-col items-center">
           <a href="https://www.linkedin.com/in/wandbrandon/" target="_blank">
-            <Image
-              src={Brandon}
+            <img
+              src={Brandon.src}
               alt="Image 3"
               className="w-48 h-48 border-stone-200 border-x-4 border-y-4 object-cover"
             />
@@ -43,8 +43,8 @@ const About = () => {
 
         <motion.div variants={item} className="flex flex-col items-center">
           <a href="https://nathanwand.com/" target="_blank">
-            <Image
-              src={Nathan}
+            <img
+              src={Nathan.src}
               alt="Image 4"
               className="w-48 h-48 border-stone-200 border-x-4 border-y-4 object-cover"
             />
@@ -55,8 +55,8 @@ const About = () => {
         </motion.div>
         <motion.div variants={item} className="flex flex-col items-center">
           <a href="https://www.linkedin.com/in/shawn-shuqing-chen/" target="_blank">
-            <Image
-              src={Shawn}
+            <img
+              src={Shawn.src}
               alt="Image 3"
               className="w-48 h-48 border-stone-200 border-x-4 border-y-4 object-cover"
             />
@@ -67,8 +67,8 @@ const About = () => {
         </motion.div>
         <motion.div variants={item} className="flex flex-col items-center">
           <a href="https://www.linkedin.com/in/austin-robertson-784b18207/" target="_blank">
-            <Image
-              src={Austin}
+            <img
+              src={Austin.src}
               alt="Image 3"
               className="w-48 h-48 border-stone-200 border-x-4 border-y-4 object-cover"
             />
