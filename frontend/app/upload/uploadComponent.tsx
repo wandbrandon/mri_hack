@@ -40,7 +40,7 @@ const UploadBox = ({
       </div>
           <div className="mb-auto mt-2 w-1/2 mx-auto">
         <div className="pl-px">
-                  <Label htmlFor="file" value="Upload file" />
+                  {/* <Label htmlFor="file" value="Upload file" /> */}
         </div>
         <FileInput
           onChange={onImageChange}
@@ -48,7 +48,7 @@ const UploadBox = ({
           // helperText="Select a MRI image to scan"
           id="file"
               />
-        <div className="text-xs text-black pl-px mt-1">Choose MRI Image</div>
+        {/* <div className="text-xs text-black pl-px mt-1">Choose MRI Image</div> */}
           </div>
     </div>
   );

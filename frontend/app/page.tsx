@@ -15,7 +15,7 @@ export default function Home() {
               At Medscan AI, we delve deep into AI precision. Our app is a
               playground for testing and optimizing custom AI models for brain
               tumor identification from MRI scans. Join us on a journey through
-              the technical frontier of medical AI at TumorFinders.
+              the technical frontier of medical AI at Medscan AI.
             </p>
           </div>
         </div>

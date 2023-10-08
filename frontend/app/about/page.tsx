@@ -6,7 +6,7 @@ const About = () => {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between pt-24">
       <div id="textWrapper" className="w-1/2 h-full flex flex-col mt-10">
-        <div className="text-4xl p-2 text-center">The Model</div>
+        <div className="text-4xl p-2 text-center justify-center">The Model</div>
         <div className="text-lg p-2 pb-8">
           This neural network model is based on EfficientNetB3, comprising
           11,184,179 parameters (approximately 42.66 MB). It's designed for
@@ -30,8 +30,8 @@ const About = () => {
           </a>
         </div>
       </div>
-
-      <div className="flex justify-center items-center space-x-32">
+    <div className="pt-8 flex justify-center text-4xl">Meet the team!</div>
+      <div className="pt-4 pb-4 flex justify-center items-center space-x-32">
         <div className="flex flex-col items-center">
           <img
             src={Austin.src}
